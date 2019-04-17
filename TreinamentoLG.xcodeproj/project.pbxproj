@@ -16,6 +16,8 @@
 		05357F262266784D00836592 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05357F252266784D00836592 /* APIClient.swift */; };
 		05357F282266796100836592 /* Enumeradores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05357F272266796100836592 /* Enumeradores.swift */; };
 		05357F2A22667E5C00836592 /* NoticiasServico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05357F2922667E5C00836592 /* NoticiasServico.swift */; };
+		05357F2F226797A600836592 /* NoticiaisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05357F2D226797A600836592 /* NoticiaisTableViewCell.swift */; };
+		05357F30226797A600836592 /* NoticiaisTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05357F2E226797A600836592 /* NoticiaisTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		05357F252266784D00836592 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		05357F272266796100836592 /* Enumeradores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeradores.swift; sourceTree = "<group>"; };
 		05357F2922667E5C00836592 /* NoticiasServico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasServico.swift; sourceTree = "<group>"; };
+		05357F2D226797A600836592 /* NoticiaisTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiaisTableViewCell.swift; sourceTree = "<group>"; };
+		05357F2E226797A600836592 /* NoticiaisTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticiaisTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +66,12 @@
 		05357F0D2266720400836592 /* TreinamentoLG */ = {
 			isa = PBXGroup;
 			children = (
+				05357F2C2267978900836592 /* Views */,
+				05357F2B2267977E00836592 /* Controllers */,
 				05357F242266783E00836592 /* Utils */,
 				05357F232266782E00836592 /* Services */,
 				05357F222266782600836592 /* Model */,
 				05357F0E2266720400836592 /* AppDelegate.swift */,
-				05357F102266720400836592 /* ViewController.swift */,
 				05357F122266720400836592 /* Main.storyboard */,
 				05357F152266720600836592 /* Assets.xcassets */,
 				05357F172266720600836592 /* LaunchScreen.storyboard */,
@@ -98,6 +103,23 @@
 				05357F272266796100836592 /* Enumeradores.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		05357F2B2267977E00836592 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05357F102266720400836592 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		05357F2C2267978900836592 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05357F2D226797A600836592 /* NoticiaisTableViewCell.swift */,
+				05357F2E226797A600836592 /* NoticiaisTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05357F192266720600836592 /* LaunchScreen.storyboard in Resources */,
+				05357F30226797A600836592 /* NoticiaisTableViewCell.xib in Resources */,
 				05357F162266720600836592 /* Assets.xcassets in Resources */,
 				05357F142266720400836592 /* Main.storyboard in Resources */,
 			);
@@ -176,6 +199,7 @@
 				05357F0F2266720400836592 /* AppDelegate.swift in Sources */,
 				05357F2A22667E5C00836592 /* NoticiasServico.swift in Sources */,
 				05357F282266796100836592 /* Enumeradores.swift in Sources */,
+				05357F2F226797A600836592 /* NoticiaisTableViewCell.swift in Sources */,
 				05357F262266784D00836592 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

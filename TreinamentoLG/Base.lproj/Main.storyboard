@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vhl-8K-0o2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XxB-ID-HkU">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9yl-Wm-GKV">
-                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -39,12 +39,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1107" y="783"/>
+            <point key="canvasLocation" x="338" y="510"/>
         </scene>
         <!--Noticias-->
         <scene sceneID="XBp-1w-sVT">
             <objects>
                 <navigationController title="Noticias" automaticallyAdjustsScrollViewInsets="NO" id="Vhl-8K-0o2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Noticias" image="news" id="0jY-Wi-4XZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="tQt-ar-qpt">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -52,12 +53,87 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="26f-nV-zDP"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="F7g-PT-wfm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uzV-Qv-Zhs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="782.8125"/>
+            <point key="canvasLocation" x="-717" y="510"/>
+        </scene>
+        <!--Vermelho-->
+        <scene sceneID="kyw-L8-aPe">
+            <objects>
+                <viewController id="6c6-3V-ExA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IFx-MN-Kte">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.81568627449999997" green="0.0039215686269999999" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="rVo-gc-AT1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Vermelho" image="instagram" id="oca-3M-2h9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ydx-6w-Jh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-848" y="1666"/>
+        </scene>
+        <!--Azul-->
+        <scene sceneID="j03-7Y-WRa">
+            <objects>
+                <viewController id="Zkp-PB-nAY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cxr-AU-pZu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.2470588235" green="0.31764705879999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="3hX-SZ-SmH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Azul" image="saindo" id="ogK-wT-vua"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4We-mi-9sP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="683" y="1665"/>
+        </scene>
+        <!--Verde-->
+        <scene sceneID="qKr-Vg-eTE">
+            <objects>
+                <viewController id="7gG-VW-yh6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M45-gM-Io4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.19603470949999999" green="0.84100541259999995" blue="0.060564427589999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="T8d-o6-fI6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Verde" image="config" id="buM-UT-NYg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCt-g1-i3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-51" y="1665"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aaB-Gh-gsd">
+            <objects>
+                <tabBarController id="XxB-ID-HkU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sH0-C1-167"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P6w-3R-USi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Vhl-8K-0o2" kind="relationship" relationship="viewControllers" id="FAS-S1-bRW"/>
+                        <segue destination="6c6-3V-ExA" kind="relationship" relationship="viewControllers" id="9Rh-5X-kaZ"/>
+                        <segue destination="7gG-VW-yh6" kind="relationship" relationship="viewControllers" id="yKV-au-BNI"/>
+                        <segue destination="Zkp-PB-nAY" kind="relationship" relationship="viewControllers" id="Nqv-dT-S5R"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xeJ-FU-Glg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1652" y="1023"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="config" width="25" height="25"/>
+        <image name="instagram" width="25" height="25"/>
+        <image name="news" width="25" height="25"/>
+        <image name="saindo" width="25" height="25"/>
+    </resources>
 </document>

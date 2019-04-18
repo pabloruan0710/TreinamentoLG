@@ -5,7 +5,6 @@
 //  Created by Pablo Ruan R Silva on 16/04/19.
 //  Copyright © 2019 LG Lugar de Gente. All rights reserved.
 //
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -68,6 +67,3 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         return 342
     }
 }
-
-
-

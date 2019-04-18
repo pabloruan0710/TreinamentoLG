@@ -12,8 +12,8 @@ import Foundation
 class NoticiaService {
     private init(){}
     
-    class func ConsultaNoticias(completion:@escaping ([Noticia])->Void){
-        APIClient.request("https://cfc.parciaisfc.com.br/noticias/pagina/1") { (response) in
+    class func ConsultaNoticias(pagina:Int = 1, completion:@escaping ([Noticia])->Void){
+        APIClient.request("https://cfc.parciaisfc.com.br/noticias/pagina/"+pagina.description) { (response) in
             var noticiasRetorno : [Noticia] = []
             switch response {
             case .sucess(let dados):

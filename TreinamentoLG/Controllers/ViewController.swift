@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     var push : UIRefreshControl!
     var noticias : [Noticia] = []
+    var paginaAtual = 0
+    var estaConsultando : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,8 +39,16 @@ extension ViewController {
     }
     
     @objc func carregaDados(){
-        NoticiaService.ConsultaNoticias {(noticias) in
-            self.noticias = noticias
+        if estaConsultando {
+            return
+        }
+        self.estaConsultando = true
+        NoticiaService.ConsultaNoticias(pagina: paginaAtual+1) { (noticias) in
+            self.paginaAtual = self.paginaAtual+1
+            self.estaConsultando = false
+            for noticia in noticias {
+                self.noticias.append(noticia)
+            }
             print(self.noticias)
             DispatchQueue.main.async {
                 self.push.endRefreshing()
@@ -65,5 +75,14 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 342
+    }
+    
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if self.noticias.count >= 10 && indexPath.row == self.noticias.count-1 && !self.estaConsultando{
+            DispatchQueue.global().async {
+                self.carregaDados()
+            }
+        }
     }
 }
